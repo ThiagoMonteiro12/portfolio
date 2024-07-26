@@ -11,5 +11,6 @@ body{
     background-color: var(--preto);
 }
 .inicio h2{
-    color: white;
+    color: black;
+
 }
