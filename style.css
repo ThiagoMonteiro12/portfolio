@@ -1,0 +1,15 @@
+:root {
+    --preto: #222222; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: 200px;
+    background-color: var(--preto);
+}
+.inicio h2{
+    color: white;
+}
