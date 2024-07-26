@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'kelly' ;
+    src: url(fontes/Kelly_Slab/);
+
+    font-family: 'kaushan';
+    src: url(fontes/Kaushan_Script\,Kelly_Slab/);
+}
 :root {
     --preto: #222222; 
 }
@@ -7,10 +14,84 @@
     box-sizing: border-box;
 }
 body{
-    background-size: 200px;
     background-color: var(--preto);
+    max-width: 1440px;
+}
+.banner{
+    max-height: 800px;
+}
+.cubo{position: absolute;
+        left: 65%;
+    top: 15%;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+}
+.dodecaedro{position: absolute;
+    left: 30%;
+    top: -7%;
+
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+.linha{position: absolute;
+    left: 2%;
+    top: 40%;
+
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+}
+.piramide{ position: absolute;
+    z-index: 0;
+    left: -10%;
+    top: -3%;
+
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+.poligono{ position: absolute;
+    left: 40%;
+    top: 60%;
+
+    transform: translatey(0px);
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    0%{
+        transform: translateY(0px);
+    }
+}
+.container-grid{
+    width: 80vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+.inicio{
+    padding: auto;
+    width: 60%;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.inicio h1, h2{
+    z-index: 2;
+    color: white;
+    display: flex;
+}
+.inicio h1{
+    font-family: "kelly slab";
+    font-size:60px;
 }
 .inicio h2{
-    color: black;
-
+    font-family: "kaushan script";
+    font-size: 50px;
 }
